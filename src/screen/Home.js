@@ -46,7 +46,7 @@ function Home() {
     const fetchData = async () => {
       try {
         const response = await fetch('https://witty-newt-pinafore.cyclic.app/api/fooddata', {
-          method: 'POST',
+          method: 'GET',
           headers: {
             'Content-Type': 'application/json',
           },
