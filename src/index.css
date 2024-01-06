@@ -24,12 +24,7 @@ code {
   font-size: 14px;
 }
 .signup{
-  background-image: url(./screen/signup-bg.jpg);
-  background-size: cover; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  backdrop-filter: brightness(50%);
+  background-color: #212121;
   object-fit: contain;
   height: calc(100vh - 86px);
   display: flex;
@@ -37,7 +32,6 @@ code {
   align-items: center;
 }
 .login{
-  /* background-image: url(./screen/signup-bg.jpg); */
   background-color: #212121;
   height: calc(100vh - 86px);
   display: flex;
@@ -46,6 +40,7 @@ code {
 }
 
 .signup-form{
+  margin: 0;
   background-color: #212121;
   display: flex;
   flex-flow: row wrap;
@@ -113,13 +108,14 @@ code {
 
 @media only screen and (min-width:0px) and (max-width:768px){
   .signup{
-      background-image: none;
+      background-color: #212121;
       width: 100vw;
       height: 100vh;
+      height: calc(100vh - 80px);
       margin-top: 40px;
     }
   .signup-form{
-      background-color: none;
+      background-color: #212121;
       width: 100vw;
       height: 100vh;
       border-radius: 0;
@@ -139,16 +135,42 @@ code {
   .form-group input{
     height: 40px;
   }
+  .signup-img{
+    height:300px;
+    width: 250px;
+  }
+  .login-img{
+    height:300px;
+    width: 250px;
+  }
   .form-L{
-    transform: translate(0px,-80px)
+    transform: translate(0px,-40px)
   }
-  .carousel-item img{
-    src: url("https://source.unsplash.com/1500x850/?pasta");
+  
+  .after-auth{
+    display: flex ;
+    flex-direction: column;
+    justify-content: start;
   }
+  .badge-cart{
+    position: absolute;
+    top: 252px;
+
+  }
+  
     
 }
 @media only screen and (min-width:768px) and (max-width:1023px) {
-    
+    .after-auth{
+      display: flex ;
+      flex-direction: column;
+      justify-content: start;
+    }
+    .badge-cart{
+      position: absolute;
+      top: 252px;
+      left:130px;
+    }
 }
 
 @media only screen and (min-width:1024px)  {
@@ -156,5 +178,7 @@ code {
 }
 
 @media (max-height:700px){
-    
+    .login-form{
+      height: 120vh;
+    }
 }

@@ -54,7 +54,7 @@ function SignUp() {
         <div className="signup-form">
 
         <div>
-            <img src={SignUpImg} alt="img" width="300px"height="400px" style={{borderRadius:"20px",order:'1',objectFit:"cover"}} />
+            <img src={SignUpImg} className='signup-img' alt="img" width="300px"height="400px" style={{borderRadius:"20px",order:'1',objectFit:"cover"}} />
         </div>
 
         <form className='form-S'>

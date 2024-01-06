@@ -69,6 +69,7 @@ function Login() {
               alt="img"
               height="400px"
               width="300px"
+              className="login-img"
               style={{ borderRadius: "30px", order: "1",objectFit:'cover' }}
             />
           </div>

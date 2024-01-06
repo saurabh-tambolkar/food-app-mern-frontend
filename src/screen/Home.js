@@ -136,7 +136,7 @@ function Home() {
             </div>
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
+            <div className="carousel-item img-div active">
               <img
                 src="https://source.unsplash.com/1500x400/?pizza"
                 style={{ objectFit: "contain", filter: "brightness(50%" }}
@@ -144,7 +144,7 @@ function Home() {
                 alt="..."
               />
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item img-div">
               <img
                 src="https://source.unsplash.com/1500x400/?burger"
                 style={{ filter: "brightness(50%" }}
@@ -152,7 +152,7 @@ function Home() {
                 alt="..."
               />
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item img-div">
               <img
                 src="https://source.unsplash.com/1500x400/?pizza"
                 style={{ filter: "brightness(50%" }}

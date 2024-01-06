@@ -68,17 +68,19 @@ function Navbar(props) {
             </ul>
 
             {auth ? (
-              <div className="d-flex" >
+              <div className="d-flex after-auth" >
                 <div className="d-flex mx-2 mt-1" >
                   <p><b>Logged In as : </b></p>
                   <p style={{width: "100px", overflow: "hidden",textOverflow: "ellipsis",marginLeft:'10px'}}>{userEmail}</p>
                 </div>
+                
+                <div className="auth-btn">
                 <Link
                   className="btn p-2 rounded bg-white text-success mx-2"
                    onClick={()=>{setCartview(true)}}
                 >
                   My Cart
-                  <span style={{position:"absolute",top:"21px",right:"110px"}} className="translate-middle badge rounded-pill bg-danger">
+                  <span style={{position:"absolute",top:"21px",right:"110px"}} className="translate-middle badge badge-cart rounded-pill bg-danger">
                     {number}
                   </span>
                   <FontAwesomeIcon icon={faCartPlus} className="mx-2" />
@@ -92,7 +94,8 @@ function Navbar(props) {
                   Logout
                   <FontAwesomeIcon icon={faRightFromBracket} className="ms-2" />
                 </Link>
-              </div>
+                </div>
+                </div>
             ) : (
               <div>
                 <Link
