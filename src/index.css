@@ -177,7 +177,7 @@ code {
     
 }
 
-@media (max-height:700px){
+@media (max-height:500px){
     .login-form{
       height: 120vh;
     }
