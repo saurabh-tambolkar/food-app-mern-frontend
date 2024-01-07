@@ -22,7 +22,7 @@ function Login() {
     else{
       
     e.preventDefault();
-    let data = await fetch("https://witty-newt-pinafore.cyclic.app/api/login", {
+    let data = await fetch("https://food-app-mern-backend-eta.vercel.app/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

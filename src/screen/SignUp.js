@@ -18,7 +18,7 @@ function SignUp() {
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        let data = await fetch("https://witty-newt-pinafore.cyclic.app/api/createuser",{
+        let data = await fetch("https://food-app-mern-backend-eta.vercel.app/api/createuser",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

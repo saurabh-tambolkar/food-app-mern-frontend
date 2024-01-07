@@ -19,7 +19,7 @@ function Cart() {
       let userEmail = localStorage.getItem("userEmail");
       let date = new Date().toDateString();
       // console.log(date)
-      let data=await fetch("https://witty-newt-pinafore.cyclic.app/api/order",{
+      let data=await fetch("https://food-app-mern-backend-eta.vercel.app/api/order",{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
