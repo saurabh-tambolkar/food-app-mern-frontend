@@ -51,7 +51,6 @@ function SignUp() {
     <div>
       <Navbar/>
        <div className="signup container-fluid ">
-        <div className="signup-form">
 
         <div>
             <img src={SignUpImg} className='signup-img' alt="img" width="300px"height="400px" style={{borderRadius:"20px",order:'1',objectFit:"cover"}} />
@@ -84,7 +83,6 @@ function SignUp() {
 
        </div>
         </div>
-    </div>
   )
 }
 

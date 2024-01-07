@@ -62,7 +62,6 @@ function Login() {
     <div>
       <Navbar />
       <div className="login container-fluid ">
-        <div className="login-form">
           <div>
             <img
               src={Loginimg}
@@ -115,7 +114,6 @@ function Login() {
           </form>
         </div>
       </div>
-    </div>
   );
 }
 
