@@ -45,32 +45,30 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://food-app-mern-backend-eta.vercel.app/api/fooddata', {
+        const response = await fetch('/api/fooddata', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
           },
+          credentials: 'include',
         });
-  
+
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }
-  
+
         const result = await response.json();
         let result1 = result[0];
         let result2 = result[1];
-  
+
         // Use optional chaining to handle potential undefined values
         result1 && setFoodItems(result1);
         result2 && setFoodCat(result2);
-  
-        // console.log(result[1]);
       } catch (error) {
         console.error('Error fetching data:', error);
-        // Handle errors, set state, show error messages, etc.
       }
     };
-  
+
     fetchData();
   }, []);
   

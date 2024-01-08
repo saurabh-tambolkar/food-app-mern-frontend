@@ -18,11 +18,12 @@ function SignUp() {
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        let data = await fetch("https://food-app-mern-backend-eta.vercel.app/api/createuser",{
+        let data = await fetch("/api/createuser",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
             },
+            credentials: 'include',
             body:JSON.stringify({name:credentials.name,
             email:credentials.email,
             password:credentials.password,
