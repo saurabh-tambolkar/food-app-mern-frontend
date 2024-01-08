@@ -18,7 +18,7 @@ function SignUp() {
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        let data = await fetch("https://food-app-mern-backend.onrender.com/api/createuser",{
+        let data = await fetch("/api/createuser",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
