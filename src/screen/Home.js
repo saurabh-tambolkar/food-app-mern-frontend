@@ -45,7 +45,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/fooddata', {
+        const response = await fetch('https://food-app-mern-backend.onrender.com/api/fooddata', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

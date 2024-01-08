@@ -22,7 +22,7 @@ function Login() {
     else{
       
     e.preventDefault();
-    let data = await fetch("/api/login", {
+    let data = await fetch("https://food-app-mern-backend.onrender.com/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

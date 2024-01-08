@@ -1,5 +1,4 @@
 {
-  "proxy":"https://food-app-mern-backend.onrender.com",
   "name": "client-food-app",
   "version": "0.1.0",
   "private": true,
